@@ -1,5 +1,5 @@
 <script>
-    import Button from "../../../../components/svelte/Button.svelte"
+    import Button from "../Button.svelte"
 </script>
 
 <Button text="Connected from Svelte!" />
