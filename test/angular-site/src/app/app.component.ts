@@ -1,10 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<Button text="Angular Connected!"></Button>`
 })
-export class AppComponent {
-  title = 'angular-site';
-}
+export class AppComponent {}
