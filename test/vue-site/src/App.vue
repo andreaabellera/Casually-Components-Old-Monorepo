@@ -1,5 +1,5 @@
 <script setup>
-import Button from "../../../components/vue/Button.vue"
+import Button from "./Button.vue"
 </script>
 
 <template>
