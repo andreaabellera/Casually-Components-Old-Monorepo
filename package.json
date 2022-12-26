@@ -3,30 +3,34 @@
     "version": "0.0.1",
     "description": "Delightfully deviant, easy-use, and customizable components for Svelte, React, Vue, and Solid.",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/andreaabellera/Casually-Components.git"
+        "type": "git",
+        "url": "git+https://github.com/andreaabellera/Casually-Components.git"
     },
     "keywords": [
-      "casually-components",
-      "casuallycomponents",
-      "casually",
-      "uitoolkit"
+        "casually-components",
+        "casuallycomponents",
+        "casually",
+        "uitoolkit"
     ],
     "author": "Andrea Abellera",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/andreaabellera/Casually-Components/issues"
+        "url": "https://github.com/andreaabellera/Casually-Components/issues"
     },
     "homepage": "https://github.com/andreaabellera/Casually-Components#readme",
     "files": [
-      "svelte",
-      "react",
-      "vue",
-      "solid",
-      "angular"
-    ]
-  }
-  
+        "svelte",
+        "react",
+        "vue",
+        "solid",
+        "angular"
+    ],
+    "devDependencies": {
+        "@angular/core": "^15.0.4",
+        "react": "^18.2.0",
+        "solid-js": "^1.6.6"
+    }
+}
