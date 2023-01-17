@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "casually-components/@react/Button"
 
 function App() {
   return <Button text="Connected from React!" />
