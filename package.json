@@ -1,6 +1,6 @@
 {
     "name": "casually-components",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Delightfully deviant, easy-use, and customizable components for Svelte, React, Vue, and Solid.",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     },
     "homepage": "https://github.com/andreaabellera/Casually-Components#readme",
     "files": [
+        "assets",
         "@svelte",
         "@react",
         "@vue",

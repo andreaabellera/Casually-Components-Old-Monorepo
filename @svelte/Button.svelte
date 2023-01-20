@@ -1,5 +1,5 @@
 <script>
-    import "./@assets/skin.css"
+    import "../assets/skin.css"
     export let text = "Button"
     export let link = "/"
     export let shape = "hex"

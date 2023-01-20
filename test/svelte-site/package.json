@@ -19,6 +19,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"casually-components": "^0.0.6"
+		"casually-components": "^0.0.7"
 	}
 }
