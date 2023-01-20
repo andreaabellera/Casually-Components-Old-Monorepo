@@ -1,5 +1,6 @@
 <script>
     import "../assets/skin.css"
+    import "../assets/button.css"
     import Link from "../assets/social/link.svg"
     import Github from "../assets/social/github.svg"
     import Instagram from "../assets/social/instagram.svg"
@@ -26,19 +27,3 @@
     {/if}
 
 </a>
-
-<style>
-    #social{
-        display: block;
-        height: 32px;
-        width: 32px;
-        padding: 0.1em;
-        margin: 10px;
-        border-radius: 0.2em;
-    }
-
-    #social img{
-        height: 100%;
-        width: 100%;
-    }
-</style>

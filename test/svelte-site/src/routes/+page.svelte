@@ -6,7 +6,7 @@
 <Button
     text = "WEDGE"
     link = "https://github.com/andreaabellera/Casually-Components"
-    shape="wedge"
+    shape = "wedge"
 />
 <Button
     text = "HEX"
@@ -24,7 +24,7 @@
     skin = "asphalt"
     text = "WEDGE"
     link = "https://github.com/andreaabellera/Casually-Components"
-    shape="wedge"
+    shape = "wedge"
 />
 <Button
     skin = "asphalt"
