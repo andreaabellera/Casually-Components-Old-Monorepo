@@ -13,11 +13,9 @@
     link = "https://github.com/andreaabellera/Casually-Components"
 />
 <SocialButton
-    handle = "github"
     link = "https://github.com/"
 />
 <SocialButton
-    handle = "somewhere else"
     link = "https://translate.google.ca/"
 />
 <Button
@@ -33,11 +31,9 @@
 />
 <SocialButton
     skin = "asphalt"
-    handle = "github"
     link = "https://github.com/"
 />
 <SocialButton
     skin = "asphalt"
-    handle = "somewhere else"
     link = "https://translate.google.ca/"
 />

@@ -2,28 +2,49 @@
     import "../assets/skin.css"
     import "../assets/button.css"
     import Link from "../assets/social/link.svg"
-    import Github from "../assets/social/github.svg"
-    import Instagram from "../assets/social/instagram.svg"
-    import LinkedIn from "../assets/social/linkedin.svg"
-    import Youtube from "../assets/social/youtube.svg"
-    export let handle = ""
+    /*import { readdirSync } from "fs"
+    import * as path from "path"*/
+
     export let link = "/"
     export let skin = "platinum"
+    let handle = "url"
+    let handleSrc = Link
+    let socials = ['facebook','forms','github','instagram','reddit','steam','tiktok','twitch','twitter','youtube']
+
+    // Resolve path: __dirname to resolve
+    /*let socialDir = path.join(__dirname, '..', 'assets', 'social')
+
+    // Get list of social handles with available icons
+    let socials = []
+    readdirSync(socialDir).forEach(file => {
+        let fn = file.substring(0,file.length-4)  // Pop off .svg extension and push to list
+        socials.push(fn) 
+    })*/
+
+    function searchSocialHandle(newURL){
+        let matches = newURL.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
+        let clearDomain = matches && matches[1]
+
+        // Find social handle match
+        if(clearDomain){
+            let toks = clearDomain.split('.')
+            for (let candidate of toks){
+                let match = socials.find(s => s == candidate)
+                if(match)
+                    return match
+            }
+        } return null
+    }
+
+    // Derive social handle from link
+    let matched = searchSocialHandle(link)
+    if(matched){
+        handle = matched
+        handleSrc = Link.replace("link",handle)
+    }
+
 </script>
 
 <a id="social" href={link} class="{skin}">
-
-    {#if handle=="github"}
-        <img src={Github} alt={handle}>
-    {:else if handle=="instagram"}
-        <img src={Instagram} alt={handle}>
-    {:else if handle=="linkedin"}
-        <img src={LinkedIn} alt={handle}>
-    {:else if handle=="youtube"}
-        <img src={Youtube} alt={handle}>
-    <!-- handle: link icon (fallback) -->
-    {:else}
-        <img src={Link} alt={handle}>
-    {/if}
-
+    <img src={handleSrc} alt="External link to {handle}">
 </a>
