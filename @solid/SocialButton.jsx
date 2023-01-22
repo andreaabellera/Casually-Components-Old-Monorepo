@@ -1,40 +1,43 @@
 import "../assets/skin.css"
 import "../assets/button.css"
 import Link from "../assets/social/link.svg"
-import Github from "../assets/social/github.svg"
-import Instagram from "../assets/social/instagram.svg"
-import LinkedIn from "../assets/social/linkedin.svg"
-import Youtube from "../assets/social/youtube.svg"
-import { mergeProps, Switch, Match } from "solid-js"
+import { mergeProps, createSignal } from "solid-js"
 
 export default function Button(props) {
     const merged = mergeProps({ 
-        handle: "",
         link: "/",
         skin: "platinum"
     }, props)
+
+    const [handle, setHandle] = createSignal("url")
+    const [handleSrc, setHandleSrc] = createSignal(Link)
+    let socials = ['facebook','forms','github','instagram','reddit','steam','tiktok','twitch','twitter','youtube']
+
+    function searchSocialHandle(newURL){
+        let matches = newURL.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
+        let clearDomain = matches && matches[1]
+
+        // Find social handle match
+        if(clearDomain){
+            let toks = clearDomain.split('.')
+            for (let candidate of toks){
+                let match = socials.find(s => s == candidate)
+                if(match)
+                    return match
+            }
+        } return null
+    }
+
+    // Derive social handle from link
+    let matched = searchSocialHandle(merged.link)
+    if(matched){
+        setHandle(matched)
+        setHandleSrc(Link.replace("link",handle()))
+    }
   
     return ( 
         <a id="social" href={merged.link} class={merged.skin}>
-            <Switch fallback={<img src={Link} alt={merged.handle} />}>
-
-                <Match when={merged.handle === "github"}>
-                    <img src={Github} alt={merged.handle} />
-                </Match>
-
-                <Match when={merged.handle === "instagram"}>
-                    <img src={Instagram} alt={merged.handle} />
-                </Match>
-                
-                <Match when={merged.handle === "linkedin"}>
-                    <img src={LinkedIn} alt={merged.handle} />
-                </Match>
-                
-                <Match when={merged.handle === "youtube"}>
-                    <img src={Youtube} alt={merged.handle} />
-                </Match>
-
-            </Switch>
+            <img src={handleSrc()} alt={"External link to " + handle()} />
         </a>
     )
 }

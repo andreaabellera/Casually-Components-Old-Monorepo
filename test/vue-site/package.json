@@ -10,7 +10,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "casually-components": "^0.0.8",
+    "casually-components": "^0.0.23",
     "vue": "^3.2.45"
   },
   "devDependencies": {
