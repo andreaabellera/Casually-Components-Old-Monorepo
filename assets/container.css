@@ -1,0 +1,13 @@
+#box{
+    min-width: 5vw;
+    max-width: 60vw;
+    min-height: 5vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.boxRowLayout{
+    display: flex !important;
+    justify-content: space-between;
+}
