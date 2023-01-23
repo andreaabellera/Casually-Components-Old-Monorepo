@@ -158,18 +158,18 @@ a{
 }
 
 
-/*============
-    BOX
- ============*/
+/*=================
+    BOX AND CARD
+ =================*/
 
-#box.platinum{
+#box.platinum, #card.platinum{
     color: var(--black);
     background: var(--smoothsilver);
     border: 2px solid var(--sage);
     box-shadow: 0 0 0 4px #D9D9D9;
     border-radius: 0.5em;
 }
-#box.asphalt{
+#box.asphalt, #card.asphalt{
     color: var(--white);
     background: var(--black);
     border: 2px solid var(--gold);

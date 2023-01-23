@@ -2,6 +2,7 @@
     import Button from "casually-components/@svelte/Button.svelte"
     import SocialButton from "casually-components/@svelte/SocialButton.svelte"
     import Box from "casually-components/@svelte/Box.svelte"
+    import Card from "casually-components/@svelte/Card.svelte"
 </script>
 
 <Button
@@ -80,4 +81,76 @@
         link = "https://translate.google.ca/"
     />
 </Box>
-<Box></Box>
+<Box />
+<Card
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+>
+    <h3>Dis Duck</h3>
+    <p>What a cute duck</p>
+</Card>
+<Card
+    skin = "asphalt"
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+    imagePosition = "right"
+    width = "20vw"
+>
+    <h3>Dis Duck</h3>
+    <p>What a cute duck What a cute duck What a cute duck What a cute duck What a cute duck</p>
+</Card>
+<Card
+    skin = "asphalt"
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+    imagePosition = "top"
+>
+    <h3>Dis Duck</h3>
+    <p>What a cute duck</p>
+</Card>
+<Card
+    skin = "asphalt"
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+    imagePosition = "bottom"
+    width = "20vw"
+>
+    <h3>Dis Duck</h3>
+    <p>What a cute duck What a cute duck What a cute duck What a cute duck What a cute duck</p>
+</Card>
+<Card
+    skin = "asphalt"
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+/>
+<Card
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+    imagePosition = "right"
+/>
+<Card
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+    imagePosition = "top"
+/>
+<Card
+    image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
+    imagePosition = "bottom"
+/>
+<Card>
+    <h3>Dis Duck</h3>
+    <p>What a cute duck</p>
+</Card>
+<Card 
+    link = "https://github.com/"
+    skin="asphalt"
+>
+    <h3>Github</h3>
+    <p>Click me to go to Github</p>
+</Card>
+<Card
+    link = "https://github.com/"
+    imagePosition = "top"
+>
+    <h3>Oi Duck!</h3>
+    <p>Lol the duck is missing <b>we must find it</b></p>
+    <Box skin="asphalt" width="auto" row="true">
+        <SocialButton link = "https://facebook.com/" />
+        <SocialButton link = "https://linkedin.com/" />
+        <SocialButton link = "https://github.com/" />
+        <SocialButton link = "https://translate.google.ca/" />
+    </Box>
+</Card>
