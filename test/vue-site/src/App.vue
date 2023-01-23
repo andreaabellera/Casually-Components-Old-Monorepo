@@ -60,7 +60,7 @@
         />
     </Box>
     <Box
-        row = true
+        :row = true
         width = "30vw"
         padding = "0.5em 1.5em 0.5em 1.5em"
     >
@@ -148,7 +148,7 @@
     >
         <h3>Oi Duck!</h3>
         <p>Lol the duck is missing <b>we must find it</b></p>
-        <Box skin="asphalt" width="auto" row="true">
+        <Box skin="asphalt" width="auto" :row=true>
             <SocialButton link = "https://facebook.com/" />
             <SocialButton link = "https://linkedin.com/" />
             <SocialButton link = "https://github.com/" />

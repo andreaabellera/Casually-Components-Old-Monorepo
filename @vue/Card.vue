@@ -22,12 +22,12 @@
 </script>
 
 <template>
-    <a v-if="link" :href="link" id="card" :class="`${props.skin} ${posClass}`" :style="`height:${props.height};width:${props.width};margin:${props.margin};padding:${props.padding};`" >
+    <a v-if="link" :href="link" id="card" :class="`${props.skin} ${posClass}`" :style="`height:${props.height};width:${props.width};margin:${props.margin};`" >
         <div v-if="image && (imagePosition=='left' || imagePosition=='top')" class="cardThumb" :style="`background-image:url(${image});`"></div>
         <div class="cardInner"><slot /></div>
         <div v-if="image && (imagePosition=='right' || imagePosition=='bottom')" class="cardThumb" :style="`background-image:url(${image});`"></div>
     </a>
-    <div v-else id="card" :class="`${props.skin} ${posClass}`" :style="`height:${props.height};width:${props.width};margin:${props.margin};padding:${props.padding};`" >
+    <div v-else id="card" :class="`${props.skin} ${posClass}`" :style="`height:${props.height};width:${props.width};margin:${props.margin};`" >
         <div v-if="image && (imagePosition=='left' || imagePosition=='top')" class="cardThumb" :style="`background-image:url(${image});`"></div>
         <div class="cardInner"><slot /></div>
         <div v-if="image && (imagePosition=='right' || imagePosition=='bottom')" class="cardThumb" :style="`background-image:url(${image});`"></div>

@@ -3,7 +3,7 @@ import "../assets/button.css"
 import Link from "../assets/social/link.svg"
 import { mergeProps, createSignal } from "solid-js"
 
-export default function Button(props) {
+export default function SocialButton(props) {
     const merged = mergeProps({ 
         link: "/",
         skin: "platinum"
