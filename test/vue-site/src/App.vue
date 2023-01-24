@@ -41,7 +41,9 @@
         link = "https://translate.google.ca/"
     />
     <Box
-        skin = "asphalt"
+        skin = "epoxy"
+        height = "450px"
+        width = "500px"
     >
         <h2>Hello Friend</h2>
         <p>Par par par broooom generator lolo max princess tutu</p>
