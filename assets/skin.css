@@ -195,16 +195,9 @@ a{
     fill: var(--pen);
 }
 
-/* Temporary SVG fill color */
-/* Courtesy of https://codepen.io/sosuke/pen/Pjoqqp for absolute recoloring */
-#social.platinum img{
-    filter: invert(56%) sepia(7%) saturate(6500%) hue-rotate(181deg) brightness(80%) contrast(69%);
-}
-#social.asphalt img{
-    filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(215deg) brightness(108%) contrast(97%);
-}
-#social.paper img{
-    filter: invert(7%) sepia(7%) saturate(5%) hue-rotate(314deg) brightness(106%) contrast(89%);
+#social svg{
+    height: inherit;
+    width: inherit;
 }
 
 

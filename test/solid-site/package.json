@@ -14,7 +14,7 @@
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
-    "casually-components": "^0.0.27",
+    "casually-components": "^0.0.29",
     "solid-js": "^1.6.6"
   }
 }

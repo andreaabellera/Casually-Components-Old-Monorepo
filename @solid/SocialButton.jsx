@@ -11,7 +11,7 @@ export default function SocialButton(props) {
 
     const [handle, setHandle] = createSignal("url")
     const [handleSrc, setHandleSrc] = createSignal(Link)
-    let socials = ['facebook','forms','github','instagram','reddit','steam','tiktok','twitch','twitter','youtube']
+    let socials = ['discord','facebook','forms','github','instagram','linkedin','reddit','steam','tiktok','twitch','twitter','youtube']
 
     function searchSocialHandle(newURL){
         let matches = newURL.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
@@ -34,10 +34,15 @@ export default function SocialButton(props) {
         setHandle(matched)
         setHandleSrc(Link.replace("link",handle()))
     }
+
+    // Fetch SVG element to render on component
+    ;(async ()=>{
+        const res = await fetch(handleSrc())
+        const src = await res.text()
+        setHandleSrc(src)
+    })()
   
     return ( 
-        <a id="social" href={merged.link} class={merged.skin}>
-            <img src={handleSrc()} alt={"External link to " + handle()} />
-        </a>
+        <a id="social" href={merged.link} class={merged.skin} innerHTML={handleSrc()}></a>
     )
 }

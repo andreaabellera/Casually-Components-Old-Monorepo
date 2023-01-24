@@ -12,7 +12,7 @@
 
     const handle = ref("url")
     const handleSrc = ref(Link)
-    let socials = ['facebook','forms','github','instagram','reddit','steam','tiktok','twitch','twitter','youtube']
+    let socials = ['discord','facebook','forms','github','instagram','linkedin','reddit','steam','tiktok','twitch','twitter','youtube']
 
     function searchSocialHandle(newURL){
         let matches = newURL.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
@@ -35,10 +35,15 @@
         handle.value = matched
         handleSrc.value = Link.replace("link",handle.value)
     }
+
+    // Fetch SVG element to render on component
+    ;(async ()=>{
+        const res = await fetch(handleSrc.value)
+        const src = await res.text()
+        handleSrc.value = src
+    })()
 </script>
 
 <template>
-    <a id="social" :href=props.link :class=props.skin>
-        <img :src="handleSrc" :alt="`External link to ${handle}`">
-    </a>
+    <a v-html="handleSrc" id="social" :href=props.link :class=props.skin></a>
 </template>

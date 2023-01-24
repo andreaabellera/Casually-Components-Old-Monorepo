@@ -1,13 +1,14 @@
 <script>
     import "../assets/skin.css"
     import "../assets/button.css"
+    import { onMount } from 'svelte'
     import Link from "../assets/social/link.svg"
 
     export let link = "/"
     export let skin = "platinum"
     let handle = "url"
     let handleSrc = Link
-    let socials = ['facebook','forms','github','instagram','reddit','steam','tiktok','twitch','twitter','youtube']
+    let socials = ['discord','facebook','forms','github','instagram','linkedin','reddit','steam','tiktok','twitch','twitter','youtube']
 
     function searchSocialHandle(newURL){
         let matches = newURL.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
@@ -31,8 +32,19 @@
         handleSrc = Link.replace("link",handle)
     }
 
+    // Fetch SVG element to render on component
+    onMount(() => {
+        const req = new XMLHttpRequest()
+        req.onreadystatechange=function(){
+            if (req.readyState==4 && req.status==200){ 
+                handleSrc = this.responseText
+            }
+        }
+        req.open("GET", handleSrc, true)
+        req.send()
+    })
 </script>
 
 <a id="social" href={link} class="{skin}">
-    <img src={handleSrc} alt="External link to {handle}">
+    {@html handleSrc}
 </a>
