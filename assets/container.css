@@ -70,6 +70,10 @@
     overflow: hidden;
 }
 
+#card.hoverable{
+    cursor: pointer;
+}
+
 /* Thanks Grid, sister Flex is being rebellious */
 .imgOnLeft{
     grid-template-columns: max-content 1fr;
