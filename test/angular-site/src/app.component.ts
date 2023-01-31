@@ -8,6 +8,7 @@ import { Component } from '@angular/core'
     <social-button></social-button>
     <box></box>
     <box text="Imma prop passed :)"></box>
+    <card></card>
   `
 })
 export class AppComponent {}

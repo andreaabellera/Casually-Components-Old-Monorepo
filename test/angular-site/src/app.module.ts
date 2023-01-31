@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { Button, SocialButton, Box } from "casually-components/@angular/all";
+import { Button, SocialButton, Box, Card } from "casually-components/@angular";
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { Button, SocialButton, Box } from "casually-components/@angular/all";
     BrowserModule,
     Button,
     SocialButton,
-    Box
+    Box, 
+    Card
   ],
   providers: [],
   bootstrap: [AppComponent]
