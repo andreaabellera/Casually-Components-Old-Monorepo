@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CasuallyButton } from "casually-components/@angular/button";
+import { Button } from "casually-components/@angular/Button";
+import { SocialButton } from "casually-components/@angular/SocialButton";
+import { Box } from "casually-components/@angular/Box";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, CasuallyButton
+    BrowserModule, Button, SocialButton, Box
   ],
   providers: [],
   bootstrap: [AppComponent]
