@@ -1,7 +1,7 @@
 # Casually Components
 
 ## Overview
-Delightfully easy-use, and customizable **smart components** for Svelte, React, Vue, Solid, and Angular. Transcend Bootstrap and Material-esque common looks with beautiful, craft-grade textured skins.
+Delightfully easy-use, and customizable **smart components** for Svelte, React, Vue, Solid, Lit, and Angular. Transcend Bootstrap and Material-esque common looks with beautiful, craft-grade textured skins.
 
 All components are coded from scratch with pure CSS, SVG, or generative JS. Use of assets such as fonts are  coded into the barebones of the component.  
 
