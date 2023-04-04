@@ -4,6 +4,7 @@ import { Component } from '@angular/core'
   selector: 'app-root',
   template: `
     <casually-button text="Angular Connected!"></casually-button>
+    <casually-button text="Angular Connected!" skin="asphalt"></casually-button>
     <casually-button></casually-button>
     <social-button></social-button>
     <box></box>
