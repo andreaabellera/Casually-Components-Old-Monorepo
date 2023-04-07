@@ -6,7 +6,13 @@ import "casually-components/@lit"
 export class App extends LitElement {
   render() {
     return html`
-    <casually-button text="Connected from Lit!"></casually-button>
+      <casually-button text="Connected from Lit!"></casually-button>
+      <casually-card>Yep</casually-card>
+      <casually-box>
+        <social-button text="github"></social-button>
+        <social-button text="instagram"></social-button>
+        <social-button text="twitter"></social-button>
+      </casually-box>
     `
   }
 }
