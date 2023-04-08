@@ -24,7 +24,6 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           node-version: 16
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
