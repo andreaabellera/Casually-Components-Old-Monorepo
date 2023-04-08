@@ -9,6 +9,9 @@
         "type": "git",
         "url": "git+https://github.com/andreaabellera/Casually-Components.git"
     },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
     "keywords": [
         "casually-lit-components",
         "casuallylitcomponents",
