@@ -20,7 +20,7 @@ jobs:
           node-version: 16
       - run: npm ci
 
-  publish-gpr:
+  publish-lit:
     needs: build
     runs-on: ubuntu-latest
     defaults:
