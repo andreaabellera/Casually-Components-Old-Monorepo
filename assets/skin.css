@@ -42,10 +42,6 @@ html, body{
 	scrollbar-color: var(--navy) var(--white);
 }
 
-body{
-	font-size: 2em;
-}
-
 a{
 	text-decoration: none;
 }
