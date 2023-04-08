@@ -3,10 +3,14 @@ import { customElement, property, state } from "lit/decorators.js"
 import "../assets/skin.css"
 import "../assets/button.css"
 import Link from "../assets/social/link.svg"
+import { skinStyles } from '../assets/skinStyles';
+import { buttonStyles } from '../assets/buttonStyles';
 
 
 @customElement("social-button")
 export class SocialButton extends LitElement {
+  static styles = [ skinStyles, buttonStyles ]
+
   @property({type: String})
   skin = "platinum"
 

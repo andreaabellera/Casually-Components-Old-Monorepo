@@ -9,9 +9,9 @@ export class App extends LitElement {
       <casually-button text="Connected from Lit!"></casually-button>
       <casually-card>Yep</casually-card>
       <casually-box>
-        <social-button text="github"></social-button>
-        <social-button text="instagram"></social-button>
-        <social-button text="twitter"></social-button>
+        <social-button link="https://linkedin.com"></social-button>
+        <social-button link="https://github.com"></social-button>
+        <social-button link="https://www.twitter.com/"></social-button>
       </casually-box>
     `
   }

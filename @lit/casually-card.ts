@@ -1,10 +1,12 @@
 import { LitElement, html } from "lit"
 import { customElement, property, state } from "lit/decorators.js"
-import "../assets/skin.css"
-import "../assets/container.css"
+import { skinStyles } from '../assets/skinStyles';
+import { containerStyles } from '../assets/containerStyles';
 
 @customElement("casually-card")
 export class CasuallyCard extends LitElement {
+  static styles = [ skinStyles, containerStyles ]
+
   @property({type: String})
   skin = "platinum"
 

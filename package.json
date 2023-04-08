@@ -1,6 +1,6 @@
 {
     "name": "casually-components",
-    "version": "0.0.50",
+    "version": "0.0.52",
     "description": "Delightfully deviant, easy-use, and customizable components for Svelte, React, Vue, and Solid.",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

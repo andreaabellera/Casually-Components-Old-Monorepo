@@ -1,12 +1,14 @@
 import { LitElement, html } from "lit"
 import { customElement, property } from "lit/decorators.js"
 import { choose } from "lit/directives/choose.js"
-import "../assets/skin.css"
-import "../assets/button.css"
+import { skinStyles } from '../assets/skinStyles';
+import { buttonStyles } from '../assets/buttonStyles';
 
 
 @customElement("casually-button")
 export class CasuallyButton extends LitElement {
+  static styles = [ skinStyles, buttonStyles ]
+  
   @property({type: String})
   text = "Button"
 

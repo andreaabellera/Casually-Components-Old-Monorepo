@@ -17,7 +17,7 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
-    "casually-components": "^0.0.48",
+    "casually-components": "^0.0.52",
     "lit": "^2.6.1"
   },
   "devDependencies": {
