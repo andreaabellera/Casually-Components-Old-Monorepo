@@ -10,7 +10,7 @@
         "url": "git+https://github.com/andreaabellera/Casually-Components.git"
     },
     "publishConfig": {
-        "@andreaabellera:registry": "https://npm.pkg.github.com"
+        "registry": "https://registry.npmjs.org/"
     },
     "keywords": [
         "casually-lit-components",
