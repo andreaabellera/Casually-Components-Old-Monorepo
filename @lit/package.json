@@ -1,31 +1,38 @@
 {
-    "name": "casually-lit-components",
-    "version": "0.0.1",
-    "description": "Delightfully deviant, easy-use, and customizable components for Lit.",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/andreaabellera/Casually-Components.git"
-    },
-    "publishConfig": {
-        "@andreaabellera:registry": "https://npm.pkg.github.com"
-    },
-    "keywords": [
-        "casually-lit-components",
-        "casuallylitcomponents",
-        "casually-components",
-        "casuallycomponents",
-        "casually",
-        "lit",
-        "uicomponents",
-        "uitoolkit"
-    ],
-    "author": "Andrea Abellera",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/andreaabellera/Casually-Components/issues"
-    },
-    "homepage": "https://github.com/andreaabellera/Casually-Components#readme"
+  "name": "casually-lit-components",
+  "version": "0.0.1",
+  "description": "Delightfully deviant, easy-use, and customizable components for Lit.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreaabellera/Casually-Components.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "casually-lit-components",
+    "casuallylitcomponents",
+    "casually-components",
+    "casuallycomponents",
+    "casually",
+    "lit",
+    "uicomponents",
+    "uitoolkit"
+  ],
+  "author": "Andrea Abellera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreaabellera/Casually-Components/issues"
+  },
+  "homepage": "https://github.com/andreaabellera/Casually-Components#readme",
+  "main": "index.js",
+  "dependencies": {
+    "lit-element": "^3.3.1",
+    "lit": "^2.7.2",
+    "lit-html": "^2.7.2"
+  },
+  "devDependencies": {}
 }
