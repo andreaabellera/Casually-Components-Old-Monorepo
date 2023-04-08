@@ -1,5 +1,5 @@
 {
-  "name": "casually-lit-components",
+  "name": "@andreaabellera/casually-lit-components",
   "version": "0.0.1",
   "description": "Delightfully deviant, easy-use, and customizable components for Lit.",
   "scripts": {
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/andreaabellera/Casually-Components.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@andreaabellera:registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "casually-lit-components",
