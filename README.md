@@ -4,7 +4,7 @@
 
 #### This component library is deprecated. Components of all framework libraries will continue to be available but discouraged for public use as modules are in premature stage. Security and accessibility features aren't incorporated.
 
-**Project is migrating to the [new Casually Components repository](https://github.com/andreaabellera/Casually-Components) as a single distribution of native web components**
+**Project is migrating to the [new Casually UI repository](https://github.com/andreaabellera/Casually-Components)](https://github.com/andreaabellera/Casually-UI) as a single distribution of native web components.**
 
 
 ## Overview
