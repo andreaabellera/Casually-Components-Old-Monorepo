@@ -46,7 +46,7 @@
         width = "500px"
     >
         <h2>Hello Friend</h2>
-        <p>Par par par broooom generator lolo max princess tutu</p>
+        <p>Generator lolo max princess tutu</p>
     </Box>
     <Box>
         <Button
@@ -63,6 +63,7 @@
     </Box>
     <Box
         :row = true
+        skin = "paper"
         width = "30vw"
         padding = "0.5em 1.5em 0.5em 1.5em"
     >
@@ -120,29 +121,40 @@
     <Card
         skin = "asphalt"
         image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
-    />
+        width = "300px"
+    > 
+        <p> Left </p> 
+    </Card>
     <Card
         image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
         imagePosition = "right"
-    />
+        width = 300px
+    >
+        <p> Right </p>
+    </Card>
     <Card
+        skin = "paper"
         image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
         imagePosition = "top"
-    />
+    >
+        <p> Top </p>
+    </Card>
     <Card
         image = "https://www.henspark.com/wp-content/uploads/2017/12/Duckling-Cute-Baby-Animals.jpg"
         imagePosition = "bottom"
-    />
+    >
+        <p> Bottom </p>
+    </Card>
     <Card>
         <h3>Dis Duck</h3>
         <p>What a cute duck</p>
     </Card>
     <Card 
-        link = "https://github.com/"
+        link = "https://www.twitch.tv/"
         skin="asphalt"
     >
-        <h3>Github</h3>
-        <p>Click me to go to Github</p>
+        <h3>Twitch</h3>
+        <p>Click me to go to Twitch</p>
     </Card>
     <Card
         link = "https://github.com/"

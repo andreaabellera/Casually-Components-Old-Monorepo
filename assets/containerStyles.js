@@ -107,6 +107,8 @@ export const containerStyles = css`
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset -0.1em 0.2em 0.3em rgb(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
 }
 
 .cardInner{

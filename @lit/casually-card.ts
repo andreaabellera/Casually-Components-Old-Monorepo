@@ -55,12 +55,12 @@ export class CasuallyCard extends LitElement {
 
   top(){
     if(this.image && (this.imagePosition=="left" || this.imagePosition=="top"))
-      return html`<div class="cardThumb" style="backgroundImage:url(${this.image})"></div>`
+      return html`<div class="cardThumb" style="background-image:url(${this.image})"></div>`
   }
 
   bottom(){
     if(this.image && (this.imagePosition=="right" || this.imagePosition=="bottom"))
-      return html`<div class="cardThumb" style="backgroundImage:url(${this.image})"></div>`
+      return html`<div class="cardThumb" style="background-image:url(${this.image})"></div>`
   }
 
   render() {
