@@ -1,4 +1,11 @@
-# Casually Components
+# Casually Components (Old Monorepo)
+
+## Dev's Note
+
+#### This component library is deprecated. Components of all framework libraries will continue to be available but discouraged for public use as modules are in premature stage. Security and accessibility features aren't incorporated.
+
+**Project is migrating to the [new Casually Components repository](https://github.com/andreaabellera/Casually-Components) as a single distribution of native web components**
+
 
 ## Overview
 Delightfully easy-use, and customizable **smart components** for Svelte, React, Vue, Solid, Lit, and Angular. Transcend Bootstrap and Material-esque common looks with beautiful, craft-grade textured skins.
